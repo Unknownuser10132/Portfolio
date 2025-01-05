@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Font imports */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #2C3E50; /* Midnight Blue */
+    color: #FFFFFF; /* Soft White */
+    font-family: 'Inter', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Root container for Scroll Snap */
+#root {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+nav {
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    scroll-snap-align: start; /* Snap to start of section */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4rem 4rem 0 4rem;
+    min-width: 80vw;
+}
+
+section:last-child {
+    padding-bottom: 4rem;
+}

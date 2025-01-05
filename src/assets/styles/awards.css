@@ -1,0 +1,58 @@
+/* Container */
+.awards-container {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+/* Cards */
+.award-cards {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure responsive layout */
+    padding: 2rem 0;
+    padding-bottom: 0;
+}
+
+/* Individual Card */
+.award-card {
+    background-color: #34495e; /* Slightly lighter blue */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.award-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Award Name */
+.award-card .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #3498DB; /* Vivid Blue */
+}
+
+/* Dates */
+.award-card .dates {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #bdc3c7; /* Soft Gray */
+}
+
+/* Description */
+.award-card .description {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0 1rem;
+}

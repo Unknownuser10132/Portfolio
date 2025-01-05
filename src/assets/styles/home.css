@@ -1,0 +1,79 @@
+/* Greeting and Name */
+.home-section .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.home-section .name .highlight {
+    color: #3498db;
+}
+
+/* Title */
+.home-section .title {
+    font-size: 1.75rem;
+    font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2ECC71;
+}
+
+/* Horizontal Divider */
+.home-section .divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Description */
+.home-section .description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+/* Social links & icons */
+.social-links-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.social-links-icons a {
+    font-size: 1.5rem;
+    color: #ffffff; /* Soft White */
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links-icons a:hover {
+    color: #3498DB; /* Vivid Green */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Tooltip Styles */
+.social-links-icons .tooltip {
+    visibility: hidden;
+    position: absolute;
+    background-color: #2D3436; /* Charcoal Gray */
+    color: #FFFFFF; /* Off-white */
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    bottom: -1.75rem; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show Tooltip on Hover */
+.social-links-icons a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

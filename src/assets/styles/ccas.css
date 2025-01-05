@@ -1,0 +1,73 @@
+/* Container */
+.ccas-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Cards */
+.cca-cards {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure responsive layout */
+    padding: 2rem 0;
+    padding-bottom: 0;
+}
+
+/* CCA List */
+.cca-list {
+    background-color: #34495e;  /* Slightly lighter blue */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card (.cca-list) Hover Effect */
+.cca-list:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* CCA Institute */
+.cca-cards .institute {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #3498DB; /* Vivid Blue */
+}
+
+/* CCA card */
+.cca-card {
+    text-align: justify;
+    margin-bottom: 1.25rem;
+}
+
+/* CCA Name */
+.cca-card .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* CCA Year */
+.cca-card .year {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #bdc3c7;  /* Soft Gray */
+}
+
+/* CCA Description */
+.cca-card .description {
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
