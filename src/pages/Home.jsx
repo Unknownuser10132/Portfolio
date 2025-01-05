@@ -41,7 +41,7 @@ const Home = () => {
                     <FaEnvelope />
                     <span className="tooltip">Email</span>
                 </a>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferer" className="view-resume">
+                <a href="/portfolio/resume.pdf" target="_blank" rel="noopener noreferer" className="view-resume">
                     <FaFileAlt />
                     <span className="tooltip">View Resume</span>
                 </a>
