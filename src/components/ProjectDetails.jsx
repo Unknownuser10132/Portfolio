@@ -43,9 +43,9 @@ const allProjectData = {
         date: "Oct 2022 - Apr 2023",
         images: [
             { path: "login.png", alt: "initial login page" },
-            { path: "register.png", alt: "initial registration page" },
             { path: "student_profile.png", alt: "student profile page" },
-            { path: "user_management_dashboard", alt: "user management dashboard page for admins" },
+            { path: "register.png", alt: "initial registration page" },
+            { path: "user_management_dashboard.png", alt: "user management dashboard page for admins" },
         ],
         introDescription: "EduSecure is a secure web application designed for educational institutions. It integrates real-time anomaly detection, secure logging, and session management to safeguard sensitive user data.",
         tools: {
@@ -74,9 +74,9 @@ const allProjectData = {
         projectType: "Personal Project",
         date: "Oct 2023 - Apr 2024",
         images: [
+            { path: "tool_architecture_diagram.png", alt: "tool process flow diagram - input to scan to detection to logging" },
             { path: "command_line_output.png", alt: "vulnerability scan command line output" },
             { path: "json_file_output.png", alt: "vulnerability scan json file output" },
-            { path: "tool_architecture_diagram", alt: "tool process flow diagram - input to scan to detection to logging" },
         ],
         introDescription: "SecureLens is a Python-based command-line tool designed to simplify web application vulnerability detection. Its modular architecture and structured logging enable developers to identify and remediate critical vulnerabilities efficiently.",
         tools: {
@@ -109,8 +109,6 @@ const ProjectDetails = ({ name, handleCloseModal }) => {
         path: new URL(`../assets/images/${name}/${img.path}`, import.meta.url).href,
     }));
     const tools = project.tools;
-
-    console.log(`Images = ${images}`);
 
     return (
         <div className="project-details">
